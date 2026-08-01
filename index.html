@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VINZ STORE - Top Up Games & PPOB Terpercaya</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOP BAR / HEADER -->
+    <header class="header">
+        <div class="logo-container">
+            <i class="fa-solid fa-gamepad logo-icon"></i>
+            <span class="logo-text">VINZ<span class="highlight">STORE</span></span>
+        </div>
+        <div class="header-right">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Cari game atau tagihan...">
+            </div>
+            <div class="user-profile">
+                <i class="fa-solid fa-user-shield"></i>
+                <span>VIP Member</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <main class="main-container">
+
+        <!-- ================= PAGE 1: KATEGORI / PRODUK ================= -->
+        <section id="page-1" class="page active">
+            <!-- Banner / Carousel Promosi -->
+            <div class="hero-banner">
+                <div class="banner-content">
+                    <span class="badge-promo"><i class="fa-solid fa-bolt"></i> PROMO FLASH SALE</span>
+                    <h1>TOP UP GAME & PPOB TERMURAH & TERCEPAT</h1>
+                    <p>Proses instan 24 Jam otomatis. Dijamin aman, legal 100%, dan bergaransi resmi!</p>
+                    <div class="banner-features">
+                        <span><i class="fa-solid fa-check-circle"></i> Instant 1 Detik</span>
+                        <span><i class="fa-solid fa-shield-halved"></i> 100% Aman</span>
+                        <span><i class="fa-solid fa-headset"></i> CS 24/7</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kategori Game -->
+            <div class="section-title">
+                <h2><i class="fa-solid fa-gamepad"></i> Top Up Game Populer</h2>
+                <p>Pilih game favoritmu untuk mulai top up</p>
+            </div>
+            <div class="grid-products" id="game-list">
+                <!-- Data injected by JS / Static Detail -->
+                <div class="product-card" onclick="selectProduct('Free Fire', 'game')">
+                    <div class="card-badge">HOT</div>
+                    <img src="FF.jpg" alt="Free Fire">
+                    <div class="card-body">
+                        <h3>Free Fire</h3>
+                        <p>Garena</p>
+                        <span class="btn-select">Beli Sekarang <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div class="product-card" onclick="selectProduct('FC Mobile', 'game')">
+                    <div class="card-badge">NEW</div>
+                    <img src="FC.jpg" alt="FC Mobile">
+                    <div class="card-body">
+                        <h3>FC Mobile</h3>
+                        <p>EA Sports</p>
+                        <span class="btn-select">Beli Sekarang <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div class="product-card" onclick="selectProduct('PUBG Mobile', 'game')">
+                    <div class="card-badge">POPULAR</div>
+                    <img src="PUBG.jpg" alt="PUBG Mobile">
+                    <div class="card-body">
+                        <h3>PUBG Mobile</h3>
+                        <p>Tencent Games</p>
+                        <span class="btn-select">Beli Sekarang <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div class="product-card" onclick="selectProduct('Mobile Legends', 'game')">
+                    <div class="card-badge">BEST SELLER</div>
+                    <img src="ML.jpg" alt="Mobile Legends">
+                    <div class="card-body">
+                        <h3>Mobile Legends</h3>
+                        <p>Moonton</p>
+                        <span class="btn-select">Beli Sekarang <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div class="product-card" onclick="selectProduct('Roblox', 'game')">
+                    <div class="card-badge">TRENDING</div>
+                    <img src="ROBLOX.jpg" alt="Roblox">
+                    <div class="card-body">
+                        <h3>Roblox</h3>
+                        <p>Roblox Corp</p>
+                        <span class="btn-select">Beli Sekarang <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kategori PPOB / Tagihan -->
+            <div class="section-title" style="margin-top: 40px;">
+                <h2><i class="fa-solid fa-bolt"></i> Layanan PPOB & Pulsa</h2>
+                <p>Isi token listrik dan pulsa bulananmu dengan cepat</p>
+            </div>
+            <div class="grid-products">
+                <div class="product-card" onclick="selectProduct('Token Listrik PLN', 'ppob')">
+                    <div class="card-badge ppob">PLN</div>
+                    <img src="TOKEN.jpg" alt="Token Listrik">
+                    <div class="card-body">
+                        <h3>Token Listrik</h3>
+                        <p>PLN Prabayar</p>
+                        <span class="btn-select">Beli Sekarang <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div class="product-card" onclick="selectProduct('Pulsa & Paket Data', 'ppob')">
+                    <div class="card-badge ppob">CELL</div>
+                    <img src="PULSA.jpg" alt="Pulsa">
+                    <div class="card-body">
+                        <h3>Pulsa & Paket Data</h3>
+                        <p>Semua Operator</p>
+                        <span class="btn-select">Beli Sekarang <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 2: PILIH JUMLAH ITEM & INPUT ID ================= -->
+        <section id="page-2" class="page">
+            <button class="btn-back" onclick="goToPage(1)"><i class="fa-solid fa-arrow-left"></i> Kembali ke Beranda</button>
+            
+            <div class="checkout-container">
+                <div class="selected-product-header">
+                    <div class="icon-game-big"><i class="fa-solid fa-gamepad"></i></div>
+                    <div>
+                        <h2 id="display-product-name">Free Fire</h2>
+                        <p>Masukkan Data Akun & Pilih Nominal Item</p>
+                    </div>
+                </div>
+
+                <div class="form-step-box">
+                    <h3>1. Masukkan Data Tujuan</h3>
+                    <div class="input-grid" id="target-input-container">
+                        <!-- Dynamic Input based on Product type -->
+                        <div class="input-group">
+                            <label>ID User / Nomor Tujuan</label>
+                            <input type="text" id="user-id-input" placeholder="Contoh: 12345678 (9012)">
+                        </div>
+                        <div class="input-group" id="server-group">
+                            <label>Server / Zone ID (Jika memilih game selain mobile legens silahkan isi angka "0" saja)</label>
+                            <input type="text" id="server-id-input" placeholder="Contoh: 1234">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-step-box" style="margin-top: 25px;">
+                    <h3>2. Pilih Nominal Item</h3>
+                    <div class="nominal-grid" id="nominal-list">
+                        <!-- Items populated via JS -->
+                    </div>
+                </div>
+
+                <button class="btn-primary-action" onclick="proceedToPayment()">Lanjut ke Pembayaran <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 3: METODE PEMBAYARAN ================= -->
+        <section id="page-3" class="page">
+            <button class="btn-back" onclick="goToPage(2)"><i class="fa-solid fa-arrow-left"></i> Kembali</button>
+
+            <div class="checkout-container">
+                <div class="order-summary-box">
+                    <h3>Ringkasan Pesanan</h3>
+                    <div class="summary-row"><span>Produk:</span> <strong id="sum-product">-</strong></div>
+                    <div class="summary-row"><span>Item:</span> <strong id="sum-item">-</strong></div>
+                    <div class="summary-row"><span>Tujuan:</span> <strong id="sum-target">-</strong></div>
+                    <div class="summary-row total"><span>Total Pembayaran:</span> <strong id="sum-price" class="text-glow">Rp 0</strong></div>
+                </div>
+
+                <div class="form-step-box" style="margin-top: 25px;">
+                    <h3>Pilih Metode Pembayaran</h3>
+                    
+                    <div class="payment-category">
+                        <p class="pay-cat-title"><i class="fa-solid fa-wallet"></i> E-Wallet (Instant)</p>
+                        <div class="pay-options">
+                            <label class="pay-card"><input type="radio" name="payment" value="QRIS (All Payment)" checked> <div><strong>QRIS</strong><span>Scan pakai GoPay, OVO, Dana, BCA, dll</span></div></label>
+                            <label class="pay-card"><input type="radio" name="payment" value="DANA"> <div><strong>DANA</strong><span>Otomatis verifikasi</span></div></label>
+                            <label class="pay-card"><input type="radio" name="payment" value="GoPay"> <div><strong>GoPay</strong><span>Otomatis verifikasi</span></div></label>
+                        </div>
+                    </div>
+
+                    <div class="payment-category" style="margin-top: 15px;">
+                        <p class="pay-cat-title"><i class="fa-solid fa-building-columns"></i> Virtual Account Bank</p>
+                        <div class="pay-options">
+                            <label class="pay-card"><input type="radio" name="payment" value="BCA Virtual Account"> <div><strong>BCA VA</strong><span>Biaya Admin Rp 1.000</span></div></label>
+                            <label class="pay-card"><input type="radio" name="payment" value="Mandiri Virtual Account"> <div><strong>Mandiri VA</strong><span>Biaya Admin Rp 1.000</span></div></label>
+                            <label class="pay-card"><input type="radio" name="payment" value="BRI Virtual Account"> <div><strong>BRI VA</strong><span>Biaya Admin Rp 1.000</span></div></label>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-primary-action" onclick="processCheckout()">Bayar Sekarang <i class="fa-solid fa-shield-cat"></i></button>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 4: PEMBAYARAN DIPROSES ================= -->
+        <section id="page-4" class="page center-page">
+            <div class="processing-card">
+                <div class="spinner-glow">
+                    <i class="fa-solid fa-spinner fa-spin"></i>
+                </div>
+                <h2>Memproses Pembayaran Anda...</h2>
+                <p>Mohon jangan menutup halaman ini. Sistem sedang memverifikasi pembayaran Anda secara otomatis.</p>
+                <div class="secure-badge-box">
+                    <i class="fa-solid fa-lock"></i> Enkripsi Keamanan 256-bit SSL Aktif
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 5: PEMBAYARAN BERHASIL ================= -->
+        <section id="page-5" class="page center-page">
+            <div class="success-card">
+                <div class="success-icon-glow">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <h2>PEMBAYARAN BERHASIL!</h2>
+                <p>Transaksi Anda telah dikonfirmasi dan diproses secara instan oleh sistem VINZ STORE.</p>
+
+                <div class="receipt-box">
+                    <div class="r-row"><span>No. Transaksi</span> <strong id="rec-id">VZ-982734192</strong></div>
+                    <div class="r-row"><span>Produk</span> <strong id="rec-product">-</strong></div>
+                    <div class="r-row"><span>Item</span> <strong id="rec-item">-</strong></div>
+                    <div class="r-row"><span>Tujuan</span> <strong id="rec-target">-</strong></div>
+                    <div class="r-row"><span>Metode Bayar</span> <strong id="rec-payment">-</strong></div>
+                    <div class="r-row total"><span>Total Lunas</span> <strong id="rec-price" class="text-glow">-</strong></div>
+                </div>
+
+                <div class="success-actions">
+                    <button class="btn-primary-action" onclick="resetStore()"><i class="fa-solid fa-house"></i> Kembali ke Beranda</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 <strong>VINZ STORE</strong>. All Rights Reserved. Pelopor Top Up Game & PPOB Tercepat dan Termurah.</p>
+    </footer>
+
+    <!-- Link JS -->
+    <script src="script.js"></script>
+</body>
+</html>
